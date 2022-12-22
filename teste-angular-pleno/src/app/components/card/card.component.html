@@ -1,0 +1,75 @@
+<div>div</div>
+
+<hr />
+<!--
+<div
+  *ngFor="let post of posts2"
+  style="max-width: 600px; border: 1px solid red; padding: 1rem"
+>
+  <div style="max-width: 300px">
+    <p>img a baixo</p>
+    <img src="{{ post.thumbnailUrl }}" alt="" width="300" />
+  </div>
+  <div>
+    <h2>resposta 1 + resposta 2</h2>
+    <h2>modelo do carro : Title: {{ post.title }}</h2>
+    <h2>modelo do carro : Title: {{ post.title }}</h2>
+  </div>
+  <div>
+    <div style="display: flex; justify-content: space-between">
+      <p>ano</p>
+      <p>kms</p>
+      <p>cambio</p>
+      <p>{{ post.userId }}</p>
+      <p>{{ post.id }}</p>
+    </div>
+  </div>
+  <div>precos</div>
+</div>
+-->
+<!--
+<div
+  
+  style="border: 1px solid red; background-color: tomato"
+>
+  <div>User ID: </div>
+  <br />
+  <div>ID: </div>
+  <br />
+  <div></div>
+  <br />
+  <div>url: </div>
+  <br />
+  <div>thumbnailUrl: </div>
+  <br />
+</div>
+
+-->
+
+<hr />
+2
+
+<div *ngFor="let carro of carros" style="border: 1px solid red; background-color: indigo">
+    oi
+    <div>marca_slug: {{ carro.titulo }}</div>
+    <br />
+    <div>ID: {{ carro.id }}</div>
+  </div>
+  
+
+<hr />
+
+<div *ngFor="let item of items">
+  {{ item.name }}
+</div>
+
+<hr />
+ultimo 2
+
+<div *ngFor="let carro of carros">
+  <h1>{{ carro.marca_slug }}</h1>
+  <p>{{ carro.id }}</p>
+  <p>{{ carro.current_page }}</p>
+  <p>{{ carro.resultados.total }}</p>
+  <!-- etc. -->
+</div>
